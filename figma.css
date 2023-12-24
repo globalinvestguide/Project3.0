@@ -1,0 +1,580 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+
+body {
+  background: #f5f8fa;
+  font-family: "lato", Sans-Serif;
+}
+
+div.head {
+  max-width: 1402px;
+  height: 73px;
+  margin-inline: 40px;
+  margin-block-start: 28px;
+  
+
+}
+
+.logo {
+  width: 200px;
+  height: 39px;
+  margin-block-start: 2px;
+  display: inline;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+ width: 476px;
+  margin-top: -30px;
+ 
+}
+
+nav >ul >li>a{
+  text-decoration: none;
+}
+
+li>a{
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.009999999776482582px;
+  
+  color: #1d2c3c;
+  &:hover {
+    text-decoration: underline blue 2px;
+  }
+}
+
+li:last-child{
+  border: 2px solid;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  color: #1d2c3c;
+  padding-left:12px;
+  padding-top: 6px;
+  margin-top: -8px;
+}
+
+nav {
+  position: relative;
+  left: 924px;
+  top: -10px;
+}
+
+.first-separator {
+  margin-inline-start: 42px;
+  width: 1402px;
+  height: 2px;
+  border: 1px solid #e0e6ea;
+}
+
+.container1 {
+  margin-block-start: 87px;
+  margin-inline-start: 400px;
+  width: 892px;
+  height: 795px;
+  background-color:  #FFFFFF;
+  border: 1px  #FFFFFF solid;
+  border-radius: 0px, 6px, 6px, 0px;
+}
+
+div.checkout {
+  width: 580px;
+  height: 80px;
+  margin-block-start: 41px;
+  padding-inline-start: 48px;
+  
+}
+
+header > #check {
+  font-family: Lato;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  height: 54px;
+  width: 161px;
+  color: #1D2C3C;
+  text-shadow: 0px 15px 50px #2B404E18,
+  0px 0px 2px gray;
+}
+
+hr {
+    width: 580px;
+    height: 2px;
+    border: 1px solid #F5F7FA;
+}
+
+div.section-one{
+    width: 580px;
+    height: 221px;
+    margin-block-start: 34px;
+    padding-inline-start: 49px;
+    
+}
+
+.title1{
+    width: 260px;
+    height:34px;
+    margin-block-end: 9px;
+}
+
+header>h5{
+    &:first-child{
+    display: inline;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    padding-block: 6px;
+    padding-inline:10px;
+    border:  3px solid #548BC5;
+    color: #548BC5;
+    margin-right: 10px;
+    }
+    &:last-child{
+        
+        display:inline;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.1599999964237213px;
+        text-align: left;
+    }
+}
+
+div.section-two{
+    width: 580px;
+    height: 154px;
+    margin-block-start: 34px;
+    padding-inline-start: 49px;
+}
+
+.title2{
+    max-width: 286px;
+    height:34px;
+    margin-block-end: 9px;
+}
+
+label{
+    display: flex;
+    margin-block: 6px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1D2C3C;
+}
+
+#card-label{
+    margin-block-start: 21px;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 227px;
+    height: 36px;
+    border: none;
+    background-color:#EDEFF2;
+}
+
+input[type=email]{
+    width: 370px; 
+}
+
+#card-input{
+    width: 483px;
+}
+
+div.form-one{
+  position: relative;
+}
+
+.lastname{
+  position: absolute;
+  left: 255px;
+  top: -5px;
+}
+
+input:focus{
+    outline: 3px solid   #038E7D;
+}
+
+::placeholder{
+    font-family: Lato;
+    padding-inline-start: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #646E7A;
+}
+
+div.final{
+    width: 483px;
+    height: 146.1px;
+    margin-block-start: 43px;
+    margin-inline-start: 49px;
+}
+button{
+    width: 483px;
+    height: 52px;
+    background-color:  #038E7D;
+    border-radius: 3px;
+    border: none;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.39600005745887756px;
+    text-align: center;
+    color: #FFFFFF;
+    &:hover{
+        background-color: #224642;
+    }
+}
+
+.icon2{
+    display: inline;
+    margin-top: 23px;
+    margin-inline-start: 79px;
+    margin-inline-end: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+#bold-style1{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.009999999776482582px;
+    text-align: left;
+}
+
+#contact, #bodylink{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.009999999776482582px;
+    text-align: left;
+    color: #646E7A;
+}
+
+.stripe-logo{
+    margin-top: 31px;
+    margin-inline-start: 185px;
+}
+
+/*CSS code for second portion*/
+main{
+  position: relative;
+}
+
+.container2 {
+    position: absolute;
+    top: 0px;
+    left: 980px;
+    width: 312px;
+    height: 796px;
+    background-color: #1179BF;
+    border: solid 1px #1179BF;
+    border-radius: 0px, 6px, 6px, 0px;
+  }
+
+  .cover{
+    width: 231px;
+    height: 610px; 
+    margin-block-start:43px;
+    margin-inline-start: 40px;
+  }
+
+  #freelancer{
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.009999999776482582px;
+    text-align: left;
+    color: #FFFFFF;  
+  }
+
+  #figure{
+    width: 140px;
+    height: 72px;
+    margin-top: 5px;
+  }
+
+  sup{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    color: #FFFFFF; 
+  }
+  sub{
+    display: inline;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  #figure99{
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 72px;
+    letter-spacing: -0.014999999664723873px;
+    text-align: left;
+    color: #FFFFFF; 
+  }
+
+  .upper{
+    width: 231px;
+    height: 152px;
+   
+
+  }
+
+  section.headinfo{
+    margin-block-start: 12px;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.007999998517334461px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  div.middle{
+    margin-block-start: 36px;;
+    width: 170px;
+    height: 46px;
+  }
+
+  div.lower{
+    margin-block-start: 70px;
+    width: 190px;
+    height:65px;
+  }
+
+  div.lower >p{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.007999998517334461px;
+    text-align: left;
+    color: #FFFFFF;
+    &:b{
+        font-weight: 700;
+    }
+}
+
+  p#switch >a{
+        font-family: Roboto;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: -0.007999998517334461px;
+text-align: left;
+text-decoration: underline 3px #b9f4ff7e;
+color: #FFFFFF;
+  }
+
+div.separator3{
+    margin-block-start: 40px;
+    width: 225px;
+    height: 1px;
+    border: 1px solid  #ffffff3a;
+    
+}
+
+div.review{
+    width:229px;
+    height: 196px;
+    padding-block-start: 40px;
+
+
+}
+ section#comments{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.008999999612569809px;
+    text-align: left;
+    color: #FFFFFF;
+    &:b{
+        font-weight: 700;
+    }
+}
+
+i{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.008999999612569809px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-block-end: 7px;
+}
+
+section.author >img{
+    display: inline;
+    margin-block-start: 18px;
+    margin-inline-end: 10px;
+}
+
+#author-name{
+    position: relative;
+    top: -16px;
+    display: inline;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight:600;
+    line-height: 19px;
+    letter-spacing: -0.007999999448657036px;
+    text-align: left;
+    color: #FFFFFF;  
+    margin-bottom: 80px;
+    
+}
+  
+#check-icon, #benefits{
+    display: inline;
+    color:#FFFFFF;
+}
+#benefits{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: -0.007999998517334461px;
+text-align: left;
+color: rgb(224, 214, 214);
+
+}
+
+#check-icon{
+    margin-top: 9px;
+    margin-bottom: -4px;
+}
+
+footer{
+    max-width : 867px;
+    height: 17px;
+    position: relative;
+    left:420px;
+    top: 40px;
+    margin-bottom: 100px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
+
+footer>p{
+    color: #636B6F;
+}
+
+#tos{
+    color: #31708F;
+}
+
+
+
+
+
+
+
+
+
+  
